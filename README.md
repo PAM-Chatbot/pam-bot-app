@@ -1,113 +1,105 @@
-# ProjetoTCC
+# Aplicativo multiplataforma do projeto PAM (TCC UNICID)
 
-Olá tudo bem ? 
+![GitHub repo size](https://img.shields.io/github/repo-size/elccastro/pam-bot-app?label=REPO%20SIZE)
 
-Para iniciar o projeto siga os seguintes passos: 
+> Aplicativo multiplataforma do chatbot para utilização do chatbot.
 
-## Instalação
+## 💻 Pré-requisitos
 
-Antes de rodar o projeto, é preciso instalar ou checar em sua máquina se contém os seguintes requisitos, caso contenha todos, você pode pular esta etapa: 
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+* Você tem uma máquina `Windows, Linux ou Mac`.
+* Você instalou uma versão LTS do `node.js`
+* Você instalou uma versão do `Java SE`
+* Você possui o `Python` instalado
+* Você possui o `Android Studio` instalado e configurado
 
-### Windows
+## 🚀 Instalando o projeto
 
-Baixe e instale os requisitos abaixo:
+Antes de rodar o aplicativo, instale os softwares necessários:
 
-* [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [Python](https://www.python.org/downloads/release/python-2717/)
-* [Node](https://nodejs.org/en/) - (Baixe a versão recomendada)
-* [AndroidStudio](https://developer.android.com/studio) - (Sim, isso mesmo é para instalar esse sugador de memória RAM)
+#### Passos adicionais, apenas para usuários MAC OS
 
-Depois disso, abra o [AndroidStudio](https://developer.android.com/studio), e procure a opção SDK Manager, instale a versão do android que você utilizará para rodar o app, e instale.
+* Instalar o `Homebrew`
+* Instalar o `Xcode`
 
-Calma que já esta acabando...
-
-Para finalizar precisamos configurar as variaveis de ambiente, acesse o iniciar do windows, e digite "variaveis de ambiente", e localize a opção "variaveis de ambiente", verifique se você já tem as variaveis JAVA_HOME e Path, caso não tenha criei ambas, para JAVA_HOME adicione o valor da variável, apontando para o seu JDK do Java, exemplo: "C:\Program Files\Java\jdk1.8.0_121", e para Path, apenas adiciona mais um caminho, agora apontando para o seu SDK exemplo "C:\Users\CAIQUERA\AppData\Local\Android\sdk\platform-tools",  
-
-### MAC OS
-
-Antes de rodar o projeto, é preciso instalar ou checar em sua máquina se contém os seguintes requisitos, caso contenha todos, você pode pular esta etapa: 
-
-* [Xcode](https://developer.apple.com/xcode/) - (Abra a sua loja da Apple Store e procure por "Xcode", e instale-o).
-* [Homebrew](https://brew.sh/index_pt-br) - (Siga as instruções)
-
-Após instalar os dois requisitos acima, precisaremos também instalar o [Node](https://nodejs.org/en/) e o [Watchman](https://facebook.github.io/watchman/docs/install.html) 
-
-Abra o terminal e execute os comandos abaixo: 
+Ainda configurando o ambiente no MAC, digite o seguinte comando no terminal:
 
 ```
-"brew install node" - (Aguarde baixar os pacotes)
+brew install watchman
 ```
 
-```
-"brew install watchman" - (Aguarde baixar os pacotes)
-```
+#### Passos para todos os usuários
 
-
-### Finalizando
-
-Após a instalação de todos os requisitos, e principalmente o [Node](https://nodejs.org/en/), será necessário instalar a interface de linha de comando do react-native, abra o cmd ou terminal e execute:
+Precisaremos instalar a interface de linha de comando do react-native, abra o terminal e execute:
 
 ```
-"npm install -g react-native-cli"
+npm install -g react-native-cli
 ```
 
-Instalado a CLI do react-native, teremos que instalar as dependencias, do projeto, navegue pelo cmd ou terminal, até a pasta do projeto e execute: 
+Instalado a CLI do react-native, teremos que instalar as dependencias, do projeto, navegue pelo terminal até a pasta do projeto e execute: 
 
 ```
-"npm install" - (Aguarde baixar todas dependencias do projeto)
+npm install
 ```
 
-Após isso precisará também criar o arquivo de configuração, para isso: 
+Após isso, precisaremos também criar o arquivo de configuração: 
 
 ```
-"npm run create-config" - (Cria um arquivo de configuração para o projeto)
+npm run create-config
 ```
 
-Pronto tudo finalizado, agora é só rodar o projeto.
+Com tudo finalizado, podemos rodar o projeto.
 
-## Rodando Projeto
 
-#### Android
+## ☕ Usando o projeto
 
-**Emulador** - Abra um emulador de android na versão que desejar utilizar. 
-**Dispositivo físico "celular"** - Habilite as "Opções de Desenvolvedor" e a "Depuração USB", e conecte um USB ao dispositivo.   
+É necessário abrir ou conectar os devices.
 
-Após emulador ou celular estiverem habilitados, execute no cmd ou terminal: 
+Obs.: Caso opte por utilizar um dispositivo Android real, é necessário habilitar nas opções de desenvolvedor a `Depuração USB` antes de conectar o aparelho ao computador.
 
-```
-"adb devices" - (Verifica se tem algum dispositivo conectado, para iniciar o projeto).
-```
-
-E finalmente para executar o projeto, navegue pelo cmd ou terminal, até a pasta do projeto e execute: 
+Após emulador, simulador ou smartphone conectado, execute no terminal:
 
 ```
-"react-native run-android" - (Aguarde o carregamento do projeto)
+adb devices
 ```
 
-#### IOS
+Este comando lista os dispositivos conectados.
 
-**Emulador** - Abra um emulador de ios na versão que desejar utilizar. 
-
-Após emulador habilitado, execute no cmd ou terminal: 
+E finalmente, para executar o projeto, navegue pelo terminal até a pasta do projeto e execute: 
 
 ```
-"adb devices" - (Verifica se tem algum dispositivo conectado, para iniciar o projeto).
+react-native run-android
 ```
 
-E finalmente para executar o projeto, navegue pelo cmd ou terminal, até a pasta do projeto e execute: 
+ou
 
 ```
-"react-native run-ios" - (Aguarde o carregamento do projeto)
+react-native run-ios
 ```
 
-## Adicionais
+Obs.: Para realizar testes no aplicativo IOS ou para gerar versão final é necessário um ambiente Apple (Mac OS + Xcode)
 
-Caso utilize o  [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/downloads/), eis aqui algumas ferramentas que serão úteis no seu dia a dia: 
+## 🤝 Colaboradores
 
-**Extensões**
+Segue os responsáveis pelo projeto:
 
-* [Power Mode](https://github.com/BigEggTools/PowerMode) - (Personalização na digitação dos seus códigos).
-* [Color Highlight](https://github.com/egonyans/vscode-ext-color-highlight) - (Mostra a cor de um valor hexadecimal).
-* [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) - (Mostra o tamanho do pacote importado, isso auxiliar para saber quais pacotes estão pesando mais no projeto).
-
- 
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://scontent.fcgh4-1.fna.fbcdn.net/v/t1.0-9/130266319_3747454355312267_5280098404566525920_n.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFppNGBfstnXH-jbx8EXmtF_dYwv_K_8iX91jC_8r_yJTOQKCJDhnJLlUeaaSDnbl_ioAyxKTE8WlDIwh9CI58t&_nc_ohc=pTqiqgxn4BkAX9ld-jN&_nc_ht=scontent.fcgh4-1.fna&oh=6e5f96d1fcc828598a1f5febf4a9981a&oe=6032B3B0" width="100px;" alt="Foto do Eliel Castro"/><br>
+        <sub>
+          <b>Eliel Castro</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://scontent.fcgh4-1.fna.fbcdn.net/v/t1.0-9/80341839_1350572791787730_7913408334424702976_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEA_GhAc1mkO0GMoYqlNuzM8U82bnm9ckbxTzZueb1yRk7QB8ErtBJQfe7ORItiRlz_9j0K6hKNdiNp9Rwk9wcl&_nc_ohc=E7LfZbH75C4AX_JIlCN&_nc_ht=scontent.fcgh4-1.fna&oh=adfa4b6d351cb391270a377a7858d49b&oe=603221FF" width="100px;" alt="Foto do Caique dos Santos"/><br>
+        <sub>
+          <b>Caique dos Santos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
