@@ -1,6 +1,8 @@
 # Aplicativo multiplataforma do projeto PAM (TCC UNICID)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/elccastro/pam-bot-app?label=REPO%20SIZE)
+![GitHub npm](https://img.shields.io/npm/v/npm?color=red)
+![GitHub repo size](https://img.shields.io/github/repo-size/elccastro/pam-bot-app?label=repo%20size)
+![GitHub last commit](https://img.shields.io/github/last-commit/elccastro/pam-bot-app)
 
 > Aplicativo multiplataforma do chatbot para utilização do chatbot.
 
